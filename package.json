@@ -1,0 +1,27 @@
+{
+  "name": "Her-Haven-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "arman",
+  "license": "ISC",
+  "description": "Her-Haven is an e-commerce platform offering a wide range of girls' accessories, dresses, and cosmetics. The backend provides secure user authentication, order management, and product browsing, designed to offer a seamless shopping experience.",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.3",
+    "nodemon": "^3.1.9",
+    "stripe": "^17.5.0"
+  }
+}
