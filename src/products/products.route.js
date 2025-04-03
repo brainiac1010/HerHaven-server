@@ -87,7 +87,7 @@ router.get("/:id", async (req, res) => {
     try {
 
         const productId = req.params.id;
-        console.log("Product ID from route:", productId);
+        // console.log("Product ID from route:", productId);
         const product = await Products.findById(productId).populate("author", "email username")
 
         if (!product) {
@@ -117,7 +117,7 @@ router.patch("/update-product/:id", verifyToken, verifyAdmin, async (req, res) =
         }
 
         res.status(200).send({
-            message: "Product updated seccussfull",
+            message: "Product updated successful",
             product: updatedProduct
         })
 
