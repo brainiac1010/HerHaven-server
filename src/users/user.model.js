@@ -15,6 +15,7 @@ const userSchema = new Schema({
         type:Date,
         default:Date.now
     }
+    
 });
 //hassing passwords
 userSchema .pre('save', async function(next){
